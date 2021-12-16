@@ -1,0 +1,37 @@
+.map-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* margin: 30px; */
+  }
+  
+  .map-frame {
+    border: 2px solid transparent;
+    height: 100%;
+  }
+  
+  #map {
+    height: 100%;
+  }
+  /* .custom .leaflet-popup-tip,
+.custom .leaflet-popup-content-wrapper {
+    background: #e93434;
+    color: #ffffff;
+} */
+
+.leaflet-verticalcenter {
+  /********************************************/
+  /* Same as .leaflet-top and .leaflet-bottom */
+  position: absolute;
+  z-index: 1000;
+  pointer-events: none;
+  /********************************************/
+  top: 70%;
+  padding-top: 10px;
+}
+
+.leaflet-verticalcenter .leaflet-control {
+  margin-bottom: 10px;
+}

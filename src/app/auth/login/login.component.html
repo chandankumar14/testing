@@ -1,0 +1,121 @@
+<div class="container login-bg">
+  <div class="card u-padding-top-big">
+    <h2 class="card-title u-center-text heading-background">
+      Login to Live Trade
+    </h2>
+  </div>
+  <div class="card card-signin my-5 box">
+    <div class="card-body">
+      <div class="hitachi-img"></div>
+      <form
+        class="form-signin u-padding-top-small"
+        [formGroup]="loginForm"
+        #lgForm="ngForm"
+        (ngSubmit)="signIn()"
+      >
+        <div
+          class="input-icons"
+          [ngClass]="{
+            'has-danger':
+              f.email.invalid &&
+              (f.email.dirty || f.email.touched || lgForm.submitted),
+            'has-success':
+              f.email.valid &&
+              (f.email.dirty || f.email.touched || lgForm.submitted)
+          }"
+        >
+          <i class="fa fa-user icon fa-2x"> </i>
+          <input
+            type="email"
+            id="inputEmail"
+            formControlName="email"
+            class="input-field"
+            placeholder="Username"
+          />
+          <!-- <label for="inputEmail">Username</label> -->
+          <!-- <control-messages
+                  [control]="f.email"
+                ></control-messages> -->
+
+          <div
+            *ngIf="
+              (f.email.dirty || f.email.touched || lgForm.submitted) &&
+              f.email.errors
+            "
+            class="help-block p-2"
+          >
+            <div style="color: red" *ngIf="f.email.errors.required">
+              Email is required
+            </div>
+            <div style="color: red" *ngIf="f.email.errors.invalidEmailAddress">
+              Email is invalid
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="input-icons"
+          [ngClass]="{
+            'has-danger':
+              f.password.invalid &&
+              (f.password.dirty || f.password.touched || lgForm.submitted),
+            'has-success':
+              f.password.valid &&
+              (f.password.dirty || f.password.touched || lgForm.submitted)
+          }"
+        >
+          <i class="fa fa-key icon fa-2x"> </i>
+          <input
+            type="password"
+            id="inputPassword"
+            class="input-field"
+            placeholder="Password"
+            formControlName="password"
+          />
+          <!-- <label for="inputPassword">Password</label> -->
+          <!-- <control-messages
+                  [control]="f.password"
+                ></control-messages> -->
+
+          <div
+            *ngIf="
+              (f.password.dirty || f.password.touched || lgForm.submitted) &&
+              f.password.errors
+            "
+            class="help-block p-2"
+          >
+            <div style="color: red" *ngIf="f.password.errors.required">
+              Password is required
+            </div>
+
+            <div style="color: red" *ngIf="f.password.errors.minlength">
+              Minimum 6 characters
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="custom-control custom-checkbox mb-3 checkbox-wrapper">
+                  <input type="checkbox" class="custom-control-input form-check-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Remember password</label>
+                </div> -->
+        <div class="checkbox-wrapper u-right">
+          <label>
+            <input type="checkbox" class="checkbox" />
+            <span class="label">&nbsp;Remember password</span>
+          </label>
+        </div>
+        <div class="u-center-text u-margin-top-big  u-margin-bottom-small">
+          <button class="btn" type="submit">Sign in</button>
+        </div>
+        
+        <div class="u-center-text">
+          <a class="color-white account-link" routerLink="/auth/register">Don't have account? Register</a>
+          <p class="color-primary">Sign Up | Forgot Your Password?</p>
+        </div>
+        <!-- <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button> -->
+        <!-- <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button> -->
+      </form>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

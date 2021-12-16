@@ -1,0 +1,168 @@
+<div class="Mid_Top">
+  <div class="d-flex h-100 p-0 m-0">
+    <div class="h-100 p-0 m-0 w-80 position-relative">
+      <!-- <app-map [latlong]="[51.5, -0.09]"></app-map> -->
+      <!-- <mgl-map
+        [style]="'mapbox://styles/mapbox/light-v10'"
+        [zoom]="[16]"
+        [center]="[-122.67981871962547, 45.51877834815366]"
+      > -->
+      <!-- <mgl-layer
+          [id]="dataLayer.id"
+          [type]="dataLayer.type"
+          [source]="dataLayer.source"
+          [paint]="dataLayer.paint"
+        ></mgl-layer> -->
+
+      <!-- <mgl-geojson-source
+          id="camera"
+          [data]="cameraData"
+          [cluster]="true"
+          [clusterMaxZoom]="14"
+          [clusterRadius]="50"
+        ></mgl-geojson-source>
+      </mgl-map> -->
+      <div *ngIf="selectedLayer === '1'">
+        <app-layer-one></app-layer-one>
+      </div>
+
+      <div *ngIf="selectedLayer === '2'">
+        <app-layer-two></app-layer-two>
+      </div>
+
+      <div *ngIf="selectedLayer === '3'">
+        <app-layer-three></app-layer-three>
+      </div>
+    </div>
+    <div class="w-20">
+      <p>&nbsp;</p>
+    </div>
+  </div>
+  <!-- <a
+    [routerLink]="['/app/curb-view']"
+    routerLinkActive="router-link-active"
+    class="ancr"
+    >&nbsp;</a
+  > -->
+  <!-- <a
+    [routerLink]="['/app/curb-view']"
+    routerLinkActive="router-link-active"
+    class="ancr ancr2"
+    >&nbsp;</a
+  > -->
+  <!-- <a
+    [routerLink]="['/app/curb-view']"
+    routerLinkActive="router-link-active"
+    class="ancr ancr3"
+    >&nbsp;</a
+  > -->
+
+  <div class="layerSelector">
+    <span
+      ><input
+        type="radio"
+        name="layerSelect"
+        value="1"
+        [checked]="selectedLayer === '1'"
+        (change)="onLayerSelect($event, '1')"
+      />Layer 1</span
+    >
+    <span
+      ><input
+        type="radio"
+        name="layerSelect"
+        value="2"
+        [checked]="selectedLayer === '2'"
+        (change)="onLayerSelect($event, '2')"
+      />Layer 2</span
+    >
+    <span
+      ><input
+        type="radio"
+        name="layerSelect"
+        value="3"
+        [checked]="selectedLayer === '3'"
+        (change)="onLayerSelect($event, '3')"
+      />Layer 3</span
+    >
+
+    <div *ngIf="selectedLayer === '1'" class="legends">
+      <div class="color-list" *ngFor="let color of colorsList">
+        <!-- {{ACTIVITY_COLOR_MAP[color]}} -->
+        <span
+          class="color"
+          [ngStyle]="{ 'background-color': ACTIVITY_COLOR_MAP[color] }"
+        ></span>
+        <span class="name">{{ color }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="kpi_link">
+  KPI
+  <a [routerLink]="['/app/curb-view']" routerLinkActive="router-link-active"
+    ><i class="icofont-external-link"></i
+  ></a>
+</div>
+
+<div class="Mid_Bot">
+  <div class="cmn">
+    <div class="inr">
+      ​
+      <div class="mainTab">
+        <div class="tab-navigation">
+          <select onchange="changeSelectorHandler(this)">
+            <option value="1">Curbspace Productivity By Date 1</option>
+            <option value="2">Curbspace Productivity By Date 2</option>
+            <option value="3">Curbspace Productivity By Date 3</option>
+          </select>
+        </div>
+        <div class="All_Data content">
+          ​​
+          <div class="tab-content tab-1">
+            <!-- <img src="assets/image/productivity1.jpg" class="tmpry" /> -->
+            <app-line-chart [config]="config1" #lineChart1></app-line-chart>
+          </div>
+          <div class="tab-content tab-2">
+            <!-- <img src="assets/image/productivity2.jpg" class="tmpry" /> -->
+            <app-line-chart [config]="config1" #lineChart1></app-line-chart>
+          </div>
+          <div class="tab-content tab-3">
+            <!-- <img src="assets/image/productivity3.jpg" class="tmpry" /> -->
+            <app-line-chart [config]="config1" #lineChart1></app-line-chart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cmn">
+    Curbspace Productivity By CurbID ​
+    <div class="mainTab">
+      <div class="tab-navigation">
+        <select onchange="changeSelectorHandler(this)">
+          <option value="1">Curbspace Productivity By Date 1</option>
+          <option value="2">Curbspace Productivity By Date 2</option>
+          <option value="3">Curbspace Productivity By Date 3</option>
+        </select>
+      </div>
+
+      <div class="All_Data content">
+        ​​
+        <div class="tab-content tab-1">
+          <app-line-chart [config]="config2" #lineChart2></app-line-chart>
+          <!-- <img src="assets/image/productivity1.jpg" class="tmpry" /> -->
+        </div>
+        <div class="tab-content tab-2">
+          <app-line-chart [config]="config2" #lineChart2></app-line-chart>
+          <!-- <img src="assets/image/productivity2.jpg" class="tmpry" /> -->
+        </div>
+        <div class="tab-content tab-3">
+          <app-line-chart [config]="config2" #lineChart2></app-line-chart>
+          <!--    <img src="assets/image/productivity3.jpg" class="tmpry" /> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

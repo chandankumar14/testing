@@ -1,0 +1,53 @@
+mgl-map {
+  height: 100%;
+  width: 100%;
+}
+
+.layerSelector {
+  position: absolute;
+  z-index: 9999;
+  top: 10%;
+  padding: 5px;
+  left: 29px;
+  background: #f4fcfd;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -ms-border-radius: 4px;
+  box-shadow: 0px 1px 6px rgba(000, 000, 000, 0.4);
+  -ms-box-shadow: 0px 1px 6px rgba(000, 000, 000, 0.4);
+  -webkit-box-shadow: 0px 1px 6px rgba(000, 000, 000, 0.4);
+}
+.layerSelector > span {
+  display: block;
+  line-height: 2.2rem;
+}
+.layerSelector input {
+  height: 20px;
+  width: 20px;
+  margin: 5px 5px;
+}
+
+.legends {
+  padding: 4px;
+}
+.color-list {
+  display: block;
+  padding: 2px;
+}
+
+.color-list .color {
+  /* padding: 4px; */
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  /* margin: 1px */
+}
+
+.color-list .name {
+  display: inline-block;
+  margin-left: 4px;
+  color: #222;
+  font-size: 0.8vw;
+}

@@ -1,0 +1,646 @@
+<div class="view_outer">
+  <div class="view_wrap view1St veiw_opn">
+    <div class="veiwopn_drop">
+      ​
+      <div class="mainTab">
+        <div class="tab-navigation">
+          <select onchange="changeSelectorHandler(this)">
+            <option value="1">Select Camera</option>
+            <option value="2">Camera - 1</option>
+            <option value="2">Camera - 2</option>
+            <option value="2">Camera - 3</option>
+            <option value="2">Camera - 4</option>
+            <!--<option value="3">Curbspace Productivity By Date 3</option>-->
+          </select>
+        </div>
+        <!--
+            <div class="All_Data content">
+            ​<div class="tab-content tab-1">          
+                <div class="curbs_anltcs">
+                <div class="row">
+                    <div class="col-md-12">
+                    <h1 style="background: green; color: #fff;">Demo One</h1>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="tab-content tab-2">          
+                <div class="curbs_anltcs">
+                <div class="row">
+                    <div class="col-md-12">
+                    <h1 style="background: blue; color: #fff;">Demo One</h1>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            </div>-->
+      </div>
+    </div>
+
+    <div class="heading">
+      <div class="lfet_titel">Live View 07/19/2021 10 am PST</div>
+      <div class="lfet_titel">CurbID - 026 at 7th Street , SFO</div>
+    </div>
+
+    <div class="feed curb_anltc">
+      <div class="vp_wrap">
+        <div class="vp_counts">
+          <i class="icofont-auto-mobile"></i> Vehicle Count
+        </div>
+        <div class="vp_area">8</div>
+      </div>
+
+      <div class="vp_wrap">
+        <div class="vp_counts">
+          <i class="icofont-users-alt-5"></i> People Count
+        </div>
+        <div class="vp_area">8</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="view_wrap view2St">
+    <div class="heading">
+      <div class="lfet_titel">Planning View</div>
+      <div class="lfet_titel">CurbID - 026 at 7th Street , SFO</div>
+    </div>
+    <div class="schema">
+      <img src="assets/image/view2.jpg" class="rset" alt="Schema" />
+    </div>
+  </div>
+
+  <div class="view_wrap">
+    ​
+    <div class="mainTab">
+      <div class="tab-navigation">
+        <div class="kpi_dir">
+          KPI<a href="javascript:void(0);"
+            ><i class="icofont-external-link"></i
+          ></a>
+        </div>
+        <select onchange="changeSelectorHandler(this)">
+          <option value="1">Curbspace Analytics</option>
+          <option value="2">Average Dwell Times</option>
+          <!--<option value="3">Curbspace Productivity By Date 3</option>-->
+        </select>
+      </div>
+
+      <div class="All_Data content">
+        ​
+        <div class="tab-content tab-1">
+          <div class="curbs_anltcs">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="contsec">
+                  <!--
+                    <div class="v_count"> 
+                    <div class="vclin">
+                      <span><i class="icofont-auto-mobile"></i></span>
+                      <span>Vehicle Count</span>
+                    </div>
+
+                    <div class="vclcount">8</div>  
+                    
+                  </div>
+
+                  <div class="v_count"> 
+                    <div class="vclin">
+                      <span><i class="icofont-users-alt-5"></i></span>
+                      <span>People Count</span>
+                    </div>
+
+                    <div class="vclcount">8</div>  
+                    
+                  </div>
+                --></div>
+              </div>
+
+              <div class="col-md-7">
+                <div class="avlbwrap">
+                  <div class="chart">
+                    <div class="chartbox">
+                      <h1>Parking Space Available</h1>
+                      <div class="mncrt">
+                        <img
+                          src="assets/image/chart1.jpg"
+                          class="crt_tmr"
+                          alt="Parking Space Available"
+                        />
+                      </div>
+                    </div>
+                    <div class="chartbox">
+                      <h1>E-Bikes Available</h1>
+                      <div class="mncrt">
+                        <img
+                          src="assets/image/chart2.jpg"
+                          class="crt_tmr"
+                          alt="E-Bikes Available"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="compalert">
+                    <div class="comphedng">
+                      Curbspace Non-compliance Alerts :
+                    </div>
+                    <div class="comp_nmb">2</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content tab-2">
+          <div class="curbs_anltcs">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="contsec dwell">
+                  <h2>Average Dwell Times</h2>
+                  <div class="avg_dwltime">
+                    <div class="dwl_lft">Passenger Loading</div>
+                    <div class="dwl_mdl">
+                      <img
+                        src="assets/image/psngr.jpg"
+                        alt="Passenger Loading"
+                      />
+                    </div>
+                    <div class="dwl_rigt">Seconds</div>
+                  </div>
+
+                  <div class="avg_dwltime">
+                    <div class="dwl_lft">Parked Car</div>
+                    <div class="dwl_mdl">
+                      <img
+                        src="assets/image/parked.jpg"
+                        alt="Passenger Loading"
+                      />
+                    </div>
+                    <div class="dwl_rigt">Minutes</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-7">
+                <div class="avlbwrap">
+                  <div class="chart pdngr_wrap">
+                    <div class="psngr">
+                      Peak * Passenger Loading Curb Space Demand
+                      <span>40 - 60 feet</span>
+                    </div>
+
+                    <div class="psng_icon">
+                      <i class="icofont-travelling"></i>
+                    </div>
+                  </div>
+
+                  <div class="compalert">
+                    <div class="comphedng">
+                      Curbspace Non-compliance Alerts :
+                    </div>
+                    <div class="comp_nmb">12</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="view_wrap">
+    ​
+    <div class="mainTab">
+      <div class="tab-navigation">
+        <div class="kpi_dir">
+          KPI<a href="javascript:void(0);"
+            ><i class="icofont-external-link"></i
+          ></a>
+        </div>
+        <select onchange="changeSelectorHandler(this)">
+          <option value="1">Bookings Table</option>
+          <option value="2">Notification Details</option>
+        </select>
+      </div>
+
+      <div class="All_Data content">
+        ​​
+        <div class="tab-content tab-1">
+          <div class="booking_wrap">
+            <article class="main__clipper">
+              <div class="main__scroller">
+                <div class="baron baron__root baron__clipper _ubuntu12">
+                  <div class="baron__scroller">
+                    <div class="table-responsive">
+                      <table
+                        width="100%"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                      >
+                        <thead>
+                          <tr>
+                            <td>Ticket ID</td>
+                            <td>Ticket Event</td>
+                            <td>Curb Asset</td>
+                            <td>Start Time</td>
+                            <td>End Time</td>
+                            <td>Status</td>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>12055</td>
+                            <td>E-Bike</td>
+                            <td>E-Bike 45</td>
+                            <td>12:15</td>
+                            <td>12:30</td>
+                            <td>
+                              <button type="button" class="btn btn-primary">
+                                Active
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>12055</td>
+                            <td>E-Bike</td>
+                            <td>E-Bike 45</td>
+                            <td>12:15</td>
+                            <td>12:30</td>
+                            <td>
+                              <button type="button" class="btn btn-primary">
+                                Active
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>12055</td>
+                            <td>E-Bike</td>
+                            <td>E-Bike 45</td>
+                            <td>12:15</td>
+                            <td>12:30</td>
+                            <td>
+                              <button type="button" class="btn btn-primary">
+                                Active
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>12055</td>
+                            <td>E-Bike</td>
+                            <td>E-Bike 45</td>
+                            <td>12:15</td>
+                            <td>12:30</td>
+                            <td>
+                              <button type="button" class="btn btn-primary">
+                                Active
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>12055</td>
+                            <td>E-Bike</td>
+                            <td>E-Bike 45</td>
+                            <td>12:15</td>
+                            <td>12:30</td>
+                            <td>
+                              <button type="button" class="btn btn-primary">
+                                Active
+                              </button>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>12055</td>
+                            <td>E-Bike</td>
+                            <td>E-Bike 45</td>
+                            <td>12:15</td>
+                            <td>12:30</td>
+                            <td>
+                              <button type="button" class="btn btn-primary">
+                                Active
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>12055</td>
+                            <td>E-Bike</td>
+                            <td>E-Bike 45</td>
+                            <td>12:15</td>
+                            <td>12:30</td>
+                            <td>
+                              <button type="button" class="btn btn-primary">
+                                Active
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>12055</td>
+                            <td>E-Bike</td>
+                            <td>E-Bike 45</td>
+                            <td>12:15</td>
+                            <td>12:30</td>
+                            <td>
+                              <button type="button" class="btn btn-primary">
+                                Active
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="load">
+                      <div class="load__value"></div>
+                    </div>
+                  </div>
+                  <div class="baron__track">
+                    <div class="baron__control baron__up">▲</div>
+                    <div class="baron__free">
+                      <div class="baron__bar"></div>
+                    </div>
+                    <div class="baron__control baron__down">▼</div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="tab-content tab-2">
+          <div class="booking_wrap">
+            <article class="main__clipper">
+              <div class="main__scroller">
+                <div class="baron baron__root baron__clipper _ubuntu12">
+                  <div class="baron__scroller">
+                    <div class="table-responsive">
+                      <table
+                        width="100%"
+                        cellpadding="0"
+                        cellspacing="0"
+                        border="0"
+                        class="ntf_dtl"
+                      >
+                        <thead>
+                          <tr>
+                            <td>Alert ID</td>
+                            <td>Alert Priority</td>
+                            <td>Alert Description</td>
+                            <td>Alert Date and Time</td>
+                            <td>Status</td>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>12055</td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn_rd"
+                              >
+                                High
+                              </button>
+                            </td>
+                            <td>
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the
+                              1500s..
+                            </td>
+                            <td class="dt_wrap">
+                              <span>00/00/2021</span> <span>12:30 PM</span>
+                            </td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn_l_grn"
+                              >
+                                Accepted
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>12055</td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn_lyelw"
+                              >
+                                Medium
+                              </button>
+                            </td>
+                            <td>
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the
+                              1500s..
+                            </td>
+                            <td class="dt_wrap">
+                              <span>00/00/2021</span> <span>12:30 PM</span>
+                            </td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn_l_ylow"
+                              >
+                                Review
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>12055</td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn_grn"
+                              >
+                                Low
+                              </button>
+                            </td>
+                            <td>
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the
+                              1500s..
+                            </td>
+                            <td class="dt_wrap">
+                              <span>00/00/2021</span> <span>12:30 PM</span>
+                            </td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn_l_rd"
+                              >
+                                Rejected
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>12055</td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn_rd"
+                              >
+                                High
+                              </button>
+                            </td>
+                            <td>
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the
+                              1500s..
+                            </td>
+                            <td class="dt_wrap">
+                              <span>00/00/2021</span> <span>12:30 PM</span>
+                            </td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn_l_blu"
+                              >
+                                Incomplete
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>12055</td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn_lyelw"
+                              >
+                                Medium
+                              </button>
+                            </td>
+                            <td>
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the
+                              1500s..
+                            </td>
+                            <td class="dt_wrap">
+                              <span>00/00/2021</span> <span>12:30 PM</span>
+                            </td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn_l_ylow"
+                              >
+                                Review
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>12055</td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn_grn"
+                              >
+                                Low
+                              </button>
+                            </td>
+                            <td>
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the
+                              1500s..
+                            </td>
+                            <td class="dt_wrap">
+                              <span>00/00/2021</span> <span>12:30 PM</span>
+                            </td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn_l_rd"
+                              >
+                                Rejected
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>12055</td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn_rd"
+                              >
+                                High
+                              </button>
+                            </td>
+                            <td>
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the
+                              1500s..
+                            </td>
+                            <td class="dt_wrap">
+                              <span>00/00/2021</span> <span>12:30 PM</span>
+                            </td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn_l_grn"
+                              >
+                                Accepted
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>12055</td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn_grn"
+                              >
+                                Low
+                              </button>
+                            </td>
+                            <td>
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the
+                              1500s..
+                            </td>
+                            <td class="dt_wrap">
+                              <span>00/00/2021</span> <span>12:30 PM</span>
+                            </td>
+                            <td>
+                              <button
+                                type="button"
+                                class="btn btn-primary btn_l_rd"
+                              >
+                                Rejected
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="load">
+                      <div class="load__value"></div>
+                    </div>
+                  </div>
+                  <div class="baron__track">
+                    <div class="baron__control baron__up">▲</div>
+                    <div class="baron__free">
+                      <div class="baron__bar"></div>
+                    </div>
+                    <div class="baron__control baron__down">▼</div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
